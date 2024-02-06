@@ -14,7 +14,7 @@ struct ContentView: View {
     // ObservedObject property to observe changes in the WeatherViewModel.
     @ObservedObject private var viewModel = WeatherViewModel()
     
-    let cities = ["Dallas", "College Station", "Houston", "Austin", "San Antonio"]
+    let cities = ["Dallas", "College Station", "Houston", "Austin", "San Antonio","El Paso"]
     
     // Function to map weather condition to image asset name
         private func weatherImageName(condition: String) -> String {

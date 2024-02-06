@@ -16,7 +16,6 @@ class WeatherViewModel: ObservableObject {
     func fetchWeather(for city: String) {
         weatherService.fetchWeather(city: city) { response in
             DispatchQueue.main.async {
-                print("api called")
                 self.weatherResponse = response
             }
         }
